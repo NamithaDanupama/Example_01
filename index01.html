@@ -1,11 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body{background-image:url("Assets/Z.png"); background-attachment: fixed;background-size:2000px;background-repeat: no-repeat;background-position:center;}
+        form{background-image:url("Assets/Y.png"); background-attachment: fixed;background-size:2000px;background-repeat: no-repeat;background-position:center;}
+        a{color: black;}
+        #z{font-family: cursive;font-weight: bold;}
+        #x{background-color: white;font-family: arial;}
+        .face{
+            position: fixed;
+            left: 36%
+            
+        }
+        #bug{
+            margin-left: 95%;
+            animation: Bmove 20s infinite ease-in;
+        }
+        #bg{
+            border-radius: 60%;
+            height: 40%;
+            
+        }
+        #righte{
+            animation: idle 20s infinite;
+        }
+        #lefte{
+            animation: idle 20s infinite;
+        }
+        #rightec{
+            animation: idlec 20s infinite;
+        }
+        #leftec{
+            animation: idlec 20s infinite;
+        }
+        #mouth{
+            z-index: -1;
+            animation: idlem 20s infinite;
+            z-index: -1;
+        }
+        #mouthc{
+            z-index: 0;
+            animation: idlemc 20s infinite;
+            z-index: 0;
+        }
+        #moutho{
+            z-index: -1;
+            animation: idlemo 20s infinite;
+            z-index: -1;
+        }
+        @keyframes Bmove{
+            from{
+                margin-left: 95%;
+            }
+            to{
+                margin-left: 20%;
+            }
+        }
+        @keyframes idlem{
+            12%{
+                z-index: -1;
+            }
+            13%{
+                z-index: 0;
+            }
+            70%{
+                z-index: 0;
+            }
+            71%{
+                z-index: -1;
+            }
+            90%{
+                z-index: -1;
+            }
+            91%{
+                z-index: 0;
+            }
+
+        }
+        @keyframes idlemc{
+            12%{
+                z-index: 0;
+            }
+            13%{
+                z-index: -1;
+            }
+            91%{
+                z-index: -1;
+            }
+        }
+        @keyframes idlemo{
+            12%{
+                z-index: -1;
+            }
+            13%{
+                z-index: -1;
+            }
+            70%{
+                z-index: -1;
+            }
+            71%{
+                z-index: 0;
+            }
+            90%{
+                z-index: 0;
+            }
+            91%{
+                z-index: -1;
+            }
+        }
+        @keyframes idle{
+            0%{
+                z-index: 0;
+            }
+            11%{
+                z-index: 0;
+            }
+            12%{
+                z-index: -1;
+            }
+            13%{
+                z-index: 0;
+                transform: matrix(1,0,0,1,0,0);
+            }
+            31%{
+                z-index: 0;
+                transform: matrix(1,0,0,1,20,0);
+            }
+            32%{
+                z-index: -1;
+            }
+            33%{
+                z-index: 0;
+                transform: matrix(1,0,0,1,20,0);
+            }
+            51%{
+                z-index: 0;
+                transform: matrix(1,0,0,1,20,-20);
+            }
+            52%{
+                z-index: -1;
+            }
+            53%{
+                z-index: 0;
+                transform: matrix(1,0,0,1,20,-20);
+            }
+            71%{
+                z-index: 0;
+                transform: matrix(1,0,0,1,0,-20);
+            }
+            72%{
+                z-index: -1;
+            }
+            73%{
+                z-index: 0;
+                transform: matrix(1,0,0,1,0,-20);
+            }
+            91%{
+                z-index: 0;
+                transform: matrix(1,0,0,1,-20,-20);
+            }
+            92%{
+                z-index: -1;
+            }
+            93%{
+                z-index: 0;
+            }
+            
+        }
+        @keyframes idlec{
+            13%{
+                transform: matrix(1,0,0,1,0,0);
+            }
+            31%{
+                transform: matrix(1,0,0,1,20,0);
+            }
+            33%{
+                transform: matrix(1,0,0,1,20,0);
+            }
+            51%{
+                transform: matrix(1,0,0,1,20,-20);
+            }
+            53%{
+                transform: matrix(1,0,0,1,20,-20);
+            }
+            71%{
+                transform: matrix(1,0,0,1,0,-20);
+            }
+            73%{
+                transform: matrix(1,0,0,1,0,-20);
+            }
+            91%{
+                transform: matrix(1,0,0,1,-20,-20);
+            }
+
+        }
+
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Namitha Ptha Not Found !</title>
 </head>
 <body>
-    
+    <div id="bug"><font size="25px" color="white">
+        <img src="New folder/Screenshot 2024-05-22 100830.png" alt="">
+    </font></div>
+    <img id="bg" class="face" src="New folder/bg.png" alt="" width="500pt">
+    <img id="lefte" class="face" src="New folder/LeftE.png" alt="" width="500pt">
+    <img id="leftec" class="face" src="New folder/LeftEC.png" alt="" width="500pt">
+    <img id="mouthc" class="face" src="New folder/mouthc.png" alt="" width="500pt">
+    <img id="moutho" class="face" src="New folder/Moutho.png" alt="" width="500pt">
+    <img id="mouth" class="face" src="New folder/Mouth.png" alt="" width="500pt">
+    <img id="righte" class="face" src="New folder/RightE.png" alt="" width="500pt">
+    <img id="rightec" class="face" src="New folder/RightEC.png" alt="" width="500pt">
 </body>
 </html>
