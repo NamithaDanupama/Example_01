@@ -9,6 +9,45 @@ body {
     padding: 0;
     background-color: #f0f0f0;
 }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  header ul li {
+    float: left;
+  }
+  
+  header ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  header ul li a:hover:not(.active) {
+    background-color: #1c34bd;
+  }
+  
+  header ul li .active {
+    background-color: #04AA6D;
+  }
+header h1 {
+    color:rgb(32, 70, 196);
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
 
 form {
     background-image: url("Assets/Y.png");
@@ -305,10 +344,13 @@ a {
     color: #666;
   }
   
-  #footer {
+  footer {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
+    font-size: large;
     text-align: center;
-    padding: 10px;
-    margin-top: 15px;
-  }
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
